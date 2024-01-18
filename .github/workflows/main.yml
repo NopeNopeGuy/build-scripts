@@ -14,7 +14,7 @@ jobs:
       run: ./build.sh whyred ccache
 
     - name: Upload whyred kernel build
-      run:  curl --upload-file out/arch/arm64/boot/Image.gz-dtb https://free.keep.sh && make mrproper
+      run:  curl --upload-file out/arch/arm64/boot/Image.gz-dtb https://free.keep.sh && make mrproper && git reset --hard
 
     - name: Tulip kernel build
       run: ./build.sh tulip ccache
