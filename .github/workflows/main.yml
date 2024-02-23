@@ -24,7 +24,7 @@ jobs:
       run: ./build.sh tulip ccache
 
     - name: Upload tulip kernel build
-      run:  curl --upload-file out/arch/arm64/boot/Image.gz-dtb https://free.keep.sh
+      run:  curl --upload-file out/arch/arm64/boot/Image.gz-dtb https://transfer.sh
           
 
       
